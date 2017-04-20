@@ -1,17 +1,12 @@
 #!/usr/bin/python
-"""
-Import Zabbix XML templates
-"""
 
 from pyzabbix import ZabbixAPI, ZabbixAPIException
 import glob
 
-# The hostname at which the Zabbix web interface is available
 ZABBIX_SERVER = 'http://127.0.0.1'
 
 zapi = ZabbixAPI(ZABBIX_SERVER)
 
-# Login to the Zabbix API
 zapi.login("support", "LLys47E3")
 
 rules = {
